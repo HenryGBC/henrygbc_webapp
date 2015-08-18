@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="henrygbcwebapp">
+<html ng-app="henryApp">
 <head>
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +19,22 @@
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/moment/moment.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js" class="bower"></script>
+  <script src="bower_components/angular-material/angular-material.js" class="bower"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
-  <script src="bower_components/angular-aria/angular-aria.js" class="bower"></script>
-  <script src="bower_components/angular-material/angular-material.js" class="bower"></script>
   <!-- Add New Bower Component JS Above -->
 
 
   <!-- Main App JS -->
-  <script src="app.js"></script>
-  <script src="src/constants.js" class="mainapp"></script>
+  <script src="app.js" class="mainapp"></script>
+  <script src="src/home/home.js" class="mainapp"></script>
+  <script src="src/home/home.controller.js" class="mainapp"></script>
+  <script src="src/blog/blog.js" class="mainapp"></script>
+  <script src="src/blog/blog.service.js" class="mainapp"></script>
   <!-- Add New Component JS Above -->
 
   <div>

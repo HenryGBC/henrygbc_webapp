@@ -58,7 +58,8 @@ module.exports = function (grunt) {
     jshint: {
       main: {
         options: {
-            jshintrc: '.jshintrc'
+            jshintrc: '.jshintrc',
+            ignores: ['node_modules/**/*.js', 'bower_components/**/*.js', 'Gruntfile.js', 'src/routing-config.js']
         },
         src: createFolderGlobs('*.js')
       }
@@ -164,7 +165,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    //Imagemin has issues on Windows.  
+    //Imagemin has issues on Windows.
     //To enable imagemin:
     // - "npm install grunt-contrib-imagemin"
     // - Comment in this section

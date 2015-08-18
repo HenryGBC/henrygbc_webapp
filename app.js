@@ -1,20 +1,30 @@
-angular.module('henrygbcwebapp', [
+angular.module('henryApp', [
     'ui.bootstrap',
     'ui.utils',
     'ui.router',
     'ngAnimate',
     'ngMaterial',
-    'underscore'
+    'ngResource',
+    'home',
+    'blog',
 ]);
 
-angular.module('henrygbcwebapp').config(function($stateProvider, $urlRouterProvider) {
+angular.module('henryApp').config(function($stateProvider, $urlRouterProvider) {
 
     /* Add New States Above */
+    console.log('epa');
     $urlRouterProvider.otherwise('/');
+    $stateProvider
+        .state('home', {
+            url: '/',
+            templateUrl: 'src/home/home.tpl.html',
+            controller: 'HomeController',
+            controllerAs:'vm'
+        });
 
 });
 
-angular.module('henrygbcwebapp').run(function($rootScope) {
+angular.module('henryApp').run(function($rootScope) {
 
     $rootScope.safeApply = function(fn) {
         var phase = $rootScope.$$phase;
