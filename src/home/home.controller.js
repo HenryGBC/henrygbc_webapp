@@ -9,6 +9,6 @@ function HomeController ($scope, blogService){
     init();
 
     function init(){
-        blogService.getPosts();
+        //blogService.getPosts();
     }
 }

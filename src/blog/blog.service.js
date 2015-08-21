@@ -18,7 +18,7 @@ function blogService($http, $q ){
         };
         $http({
             method: 'GET',
-            url: 'http://127.0.0.1:9000/blog/',
+            url: 'http://127.0.0.1:8000/blog/',
             headers: headers
         })
         .then(function(data){
