@@ -20,7 +20,19 @@ angular.module('henryApp').config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'src/home/home.tpl.html',
             controller: 'HomeController',
             controllerAs:'vm'
+        })
+        .state('post', {
+            url: '/blog/:slug',
+            templateUrl: 'src/blog/post.tpl.html',
+            controller: 'PostController',
+            controllerAs:'vm'
         });
+
+
+
+
+
+
 
 });
 

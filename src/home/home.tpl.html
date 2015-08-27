@@ -7,10 +7,10 @@
         Hola, mi nombre es Henry, Ingeniero Informático, Developer y Futbolero y les vengo a escribir sobre todo lo que me apasiona
     </div>
     <div class="list-posts" layout="row" layout-align="space-around center">
-        <md-card class="post" ng-repeat="post in vm.posts">
-         <img class="post-image" ng-src="img/django.png" class="md-card-image" alt="Washed Out">
+        <md-card class="post" ng-repeat="post in vm.posts" ng-click="vm.goToPost(post.url)">
+         <img class="post-image" ng-src="{{post.image}}" class="md-card-image" alt="Washed Out">
          <md-card-content style="padding: 5px 15px;">
-           <h2 class="md-title">API REST Con Django Rest Framework</h2>
+           <h2 class="md-title">{{post.title}}</h2>
          </md-card-content>
          <div  layout="row" layout-align="end center">
              <md-button  aria-label="menu" class="md-fab md-warn social-btn">
